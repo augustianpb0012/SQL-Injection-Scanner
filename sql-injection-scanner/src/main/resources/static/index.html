@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL Injection Scanner</title>
+</head>
+<body>
+    <h2>SQL Injection Scanner</h2>
+    <input type="text" id="url" placeholder="http://example.com/page.php?id=1">
+    <button onclick="scan()">Scan</button>
+    <pre id="result"></pre>
+
+    <script>
+        async function scan() {
+            const url = document.getElementById("url").value;
+            const response = await fetch("/scan", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ url })
+            });
+
+            const result = await response.json();
+            document.getElementById("result").innerText = JSON.stringify(result, null, 2);
+        }
+    </script>
+</body>
+</html>

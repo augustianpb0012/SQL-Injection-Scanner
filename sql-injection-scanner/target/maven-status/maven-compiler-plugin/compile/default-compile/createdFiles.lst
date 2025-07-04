@@ -1,0 +1,3 @@
+com\example\sqlscanner\service\ScannerService.class
+com\example\sqlscanner\controller\ScannerController.class
+com\example\sqlscanner\SqlInjectionScannerApplication.class
