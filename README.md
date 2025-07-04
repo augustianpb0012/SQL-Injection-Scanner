@@ -19,3 +19,20 @@ A lightweight web-based SQL Injection vulnerability scanner built with **Java Sp
 ```bash
 git clone https://github.com/YOUR_USERNAME/sql-injection-scanner.git
 cd sql-injection-scanner
+
+
+### 2. Build and run the app
+'''bash
+mvn clean install
+mvn spring-boot:run
+
+### 3. Open in browser
+http://localhost:8080
+
+Example Test URL
+Use the following intentionally vulnerable test site:
+http://testphp.vulnweb.com/artists.php?artist=1
+
+Screenshot
+![image](https://github.com/user-attachments/assets/f6082470-4e99-49a2-a1fc-89e4589faaf7)
+
