@@ -15,8 +15,9 @@ A lightweight web-based SQL Injection vulnerability scanner built with **Java Sp
 
 ## 🚀 Getting Started
 
-### 1. Clone the repository
-```bash
+
+### 1. clonw the repository
+'''bash
 git clone https://github.com/YOUR_USERNAME/sql-injection-scanner.git
 cd sql-injection-scanner
 
